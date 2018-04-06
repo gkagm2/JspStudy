@@ -8,7 +8,7 @@
 <title>Calendar 클래스 사용</title>
 </head>
 <body>
-<%
+<%	
 	Calendar cal = Calendar.getInstance();
 %>
 오늘은
