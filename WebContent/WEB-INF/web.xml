@@ -17,5 +17,27 @@
 		<param-name>debugLevel</param-name>
 		<param-value>5</param-value>
 	</context-param>
-
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/error404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/error500.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/error/errorNullPointer.jsp</location>
+	</error-page>
+	
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>/Chapter7/common_test/*</url-pattern>
+			<include-prelude>/Chapter7/common/variable.jspf</include-prelude>
+			<include-coda>/Chapter7/common/footer.jspf</include-coda>
+		</jsp-property-group>
+	</jsp-config>
+	
 </web-app>
