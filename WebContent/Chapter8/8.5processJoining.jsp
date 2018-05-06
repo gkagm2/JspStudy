@@ -19,6 +19,10 @@
 		<td>암호</td>
 		<td><jsp:getProperty name="memberInfo" property="password"/></td>
 	</tr>
+	
+	
+	
+	
 	<tr>
 		<td>이름</td>
 		<td><jsp:getProperty name="memberInfo" property="name"/></td>
