@@ -2,6 +2,12 @@
     pageEncoding="UTF-8"%>
     
 <%
+
+//세션의 유효시간 정하기 , web.xml파일에서 할 수도 있고(분단위) 
+//아래와 같은 방법으로 유효시간을 정할 수 있다. (초단위)
+session.setMaxInactiveInterval(60 * 60);
+
+
 // 세션 저장
 session.setAttribute("MEMBERID", "madvirus");
 session.setAttribute("NAME","장현명");
@@ -16,7 +22,7 @@ session.setAttribute("NAME","장현명");
 
 세션에 정보를 저장하였습니다.
 
-<%= session.getAttribute("MEMBERID"); %>
+<%= session.getAttribute("MEMBERID")%>
 
 </body>
 </html>
