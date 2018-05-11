@@ -40,4 +40,10 @@
 		</jsp-property-group>
 	</jsp-config>
 	
+	<session-config>
+	<!-- 세션의 유효 설정 시간을 50분으로 바꾸는 방법임 -->
+		<session-timeout>50</session-timeout>
+	</session-config>
+	
+	
 </web-app>
